@@ -14,8 +14,8 @@ public class Show {
         this.listOfActors = listOfActors;
     }
 
-    public void printShowDirector(String title) {
-            System.out.println("Режиссер спектакля:" + director);
+    public void printShowDirector() {
+        System.out.println("Режиссер спектакля:" + director);
     }
 
     public void printActorList() {
@@ -40,11 +40,9 @@ public class Show {
         Scanner scanner = new Scanner(System.in);
 
         for (int i = 0; i < listOfActors.size(); i++) {
-            int count = 0;
 
             if (listOfActors.get(i).contains(surname)) {
                 surnameIndex.add(i);
-                count++;
             }
         }
 
@@ -55,9 +53,7 @@ public class Show {
             System.out.println("Найдено несколько актеров с указанной фамилией.\n " +
                     "Напишите имя актера которого нужно заменить.");
             for (Integer num : surnameIndex) {
-                int i = 1;
                 System.out.println(listOfActors.get(surnameIndex.get(num)));
-                i++;
             }
             System.out.println("Если в списке вы не нашли нужного Актера нажмите Enter");
 

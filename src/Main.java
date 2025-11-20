@@ -16,11 +16,11 @@ public class Main {
         String musicAuthor = "Георгий Жуков";
         String choreographer = "Максим Ферзь";
 
-        Show showSimple = new Show("Pump-IT", 230 , directorOne, new ArrayList<String>());
-        Opera showOpera = new Opera("China OPERA", 180, directorTwo, new ArrayList<String>(), musicAuthor, "", 30 );
+        Show showSimple = new Show("Pump-IT", 230 , directorOne, new ArrayList<>());
+        Opera showOpera = new Opera("China OPERA", 180, directorTwo, new ArrayList<>(), musicAuthor, "", 30 );
         System.out.println("Необходимо указать либретто для оперы");
         showOpera.setLibrettoText(scanner.nextLine());
-        Ballet showBallet = new Ballet("Nut destroyer", 340 , directorOne, new ArrayList<String>(), musicAuthor, "", choreographer);
+        Ballet showBallet = new Ballet("Nut destroyer", 340 , directorOne, new ArrayList<>(), musicAuthor, "", choreographer);
         System.out.println("Необходимо указать либретто для балета");
         showBallet.setLibrettoText(scanner.nextLine());
 
